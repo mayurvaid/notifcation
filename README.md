@@ -25,29 +25,19 @@ Cassadra
 ```
 FakeSTMP Server
 ```
+### Architecture
 
 ### Running the code
 
 A step by step series of examples that tell you how to get a code running
 
-```
-Start Cassandra on localhost with port 9042 
-```
-```
-Start Zookeeper on localhost with port 2181 
-```
-```
-Then start kafka server
-```
-```
-Start FAKESMTP server
-```
-```
-./gradler clean build from the root folder
-```
-```
-Run NotificationApplication.java
-```
+* Start Cassandra on localhost with port 9042 
+* Start Zookeeper on localhost with port 2181 
+* Then start kafka server
+* Start FAKESMTP server
+* ./gradler clean build from the root folder
+* Run NotificationApplication.java
+
 ## Built With
 
 * [Gradle](https://gradle.org/) - Build tool
