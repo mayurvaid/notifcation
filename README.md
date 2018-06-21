@@ -26,6 +26,7 @@ Cassadra
 FakeSTMP Server
 ```
 ### Architecture
+![Alt text](notification.png?raw=true "Optional Title")
 
 ### Running the code
 
