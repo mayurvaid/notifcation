@@ -10,7 +10,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 @Configuration
 public class EmailConfiguration {
-	@Value("${email.hostname:10.5.37.220}")
+	@Value("${email.hostname:localhost}")
 	private String emailHostName;
 
 	@Value("${email.port:9010}")

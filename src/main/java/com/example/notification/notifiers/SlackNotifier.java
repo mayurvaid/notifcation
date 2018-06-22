@@ -3,6 +3,7 @@ package com.example.notification.notifiers;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -12,6 +13,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Component
 public class SlackNotifier<T extends NotificationTransaction> implements Notifier<T> {
+	@Value("${slack.url:https://hooks.slack.com/services/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}")
+	private String slackUrl;
 
 	@Override
 	public void notify(NotificationTransaction transaction) {
@@ -22,8 +25,7 @@ public class SlackNotifier<T extends NotificationTransaction> implements Notifie
 		try {
 			data.put("text", mapper.writeValueAsString(transaction));
 
-			template.postForObject("https://hooks.slack.com/services/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",
-					mapper.writeValueAsString(data), String.class);
+			template.postForObject(slackUrl, mapper.writeValueAsString(data), String.class);
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}

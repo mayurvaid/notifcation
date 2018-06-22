@@ -32,7 +32,7 @@ public class KafkaConsumerConfig {
 	@Autowired
 	private NotificationTransactionService notificationTransactionService;
 	
-	@Value("${kafka.server:10.5.37.220:9092}")
+	@Value("${kafka.server:localhost:9092}")
 	private String bootstrapServers;
 
 	@Value("${kafka.groupId:notification-test4}")
