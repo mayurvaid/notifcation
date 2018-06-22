@@ -39,6 +39,16 @@ A step by step series of examples that tell you how to get a code running
 * ./gradler clean build from the root folder
 * Run NotificationApplication.java
 
+## Testing
+* We are using spring boot starter testing framework
+
+## Deployment
+We can use docker to deploy and migrate the code in higher environment.
+* Gradle clean build
+* docker build -f Dockerfile -t docker-spring-notification
+* docker run -p 10000:10000 docker-spring-notification
+* This will start on port 10000
+
 ## Built With
 
 * [Gradle](https://gradle.org/) - Build tool
