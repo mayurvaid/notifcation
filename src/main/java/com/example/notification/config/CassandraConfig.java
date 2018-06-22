@@ -14,7 +14,7 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
 	@Value("${cassandra.keyspacename:notification}")
 	private String keyspaceName;
 	
-	@Value("${cassandra.host:127.0.0.1}")
+	@Value("${cassandra.host:localhost}")
 	private String cassandraHost;
 	
     @Override

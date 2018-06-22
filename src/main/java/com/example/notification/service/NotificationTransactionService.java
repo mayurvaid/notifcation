@@ -24,11 +24,9 @@ public class NotificationTransactionService {
 
 	@Autowired
 	private KafkaTemplate<String, String> kafkaTemplate;
-	
+
 	@Autowired
 	private List<Notifier<NotificationTransaction>> notifierList;
-
-	
 
 	public NotificationTransaction addRequest(String requestedTo, String requestedFrom, String body, String subject)
 			throws JsonProcessingException {
