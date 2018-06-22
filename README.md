@@ -14,13 +14,13 @@ What things you need to run the libraray
 JDK8
 ```
 ```
-Gradle
+Gradle > 4.0
 ```
 ```
-kafka
+kafka 
 ```
 ```
-Cassadra
+Cassadra > 2.1
 ```
 ```
 FakeSTMP Server
