@@ -53,6 +53,6 @@ We can use docker to deploy and migrate the code in higher environment.
 
 * [Gradle](https://gradle.org/) - Build tool
 * [Spring](https://spring.io/) - Farmework
-* [Docker] (https://www.docker.com/) - Docker
-* [Cassandra] (http://cassandra.apache.org/) - Cassandra
-* [Kafka] (https://kafka.apache.org/)- Kafka
+* [Docker](https://www.docker.com/) - Docker
+* [Cassandra](http://cassandra.apache.org/) - Cassandra
+* [Kafka](https://kafka.apache.org/)- Kafka
